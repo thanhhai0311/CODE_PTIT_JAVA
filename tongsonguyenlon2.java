@@ -4,17 +4,18 @@
  */
 package codeptit.next;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 /**
  *
  * @author Dell
  */
-public class test {
+public class tongsonguyenlon2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = 1;
-        int b = 2;
-        System.out.println((float)a/b);
+        BigInteger a = sc.nextBigInteger();
+        BigInteger b = sc.nextBigInteger();
+        System.out.println(a.add(b));
     }
 }

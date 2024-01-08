@@ -10,11 +10,20 @@ import java.util.Scanner;
  *
  * @author Dell
  */
-public class test {
+public class xauconlonnhat {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = 1;
-        int b = 2;
-        System.out.println((float)a/b);
+        String s = sc.nextLine();
+        char k = 'a';
+        String ans = "";
+        for(int i=s.length()-1; i>=0; i--){
+            if(s.charAt(i)>=k){
+                k=s.charAt(i);
+                ans+=s.charAt(i);
+            }
+        }
+        for(int i = ans.length()-1; i>=0; i--){
+            System.out.print(ans.charAt(i));
+        }
     }
 }

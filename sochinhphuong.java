@@ -10,11 +10,16 @@ import java.util.Scanner;
  *
  * @author Dell
  */
-public class test {
+public class sochinhphuong {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = 1;
-        int b = 2;
-        System.out.println((float)a/b);
+        int t = sc.nextInt();
+        while(t-->0){
+            int n = sc.nextInt();
+            if((int)Math.sqrt(n)*(int)Math.sqrt(n)==n){
+                System.out.println("YES");
+            }
+            else System.out.println("NO");
+        }
     }
 }
